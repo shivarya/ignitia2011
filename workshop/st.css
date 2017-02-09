@@ -1,0 +1,48 @@
+
+
+/*
+	Logo / Menu / Panel Positioning
+*/
+
+
+#blob { background:#0F0; 
+border-right: #390 solid 1px;
+border-left:#390 solid 1px;
+position:absolute;
+z-index:1;
+top: 0;
+background: -moz-linear-Gradient(top, #0c0c0c, #000000);
+-moz-border-radius: 5px;
+-moz-box-shadow: 2px 3px 40px #666;
+
+}
+#nav { margin:0 auto;
+width:800px;
+background:transparent;
+}
+#nav ul{ margin: 0px;
+	padding: 0px;}
+	
+#nav li { float: left;
+ list-style:none;
+border-left:
+ solid black 1px;
+border-right: 
+solid 1px ;}
+
+#nav li a {
+
+	color: #e3e3e3;
+	position:relative;
+	z-index: 2;
+	float:left;
+	font-size:20px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	padding-top: 11px;
+	padding-right: 21px;
+	padding-bottom: 12px;
+	padding-left: 22px;
+
+}
+

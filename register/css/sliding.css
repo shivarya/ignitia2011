@@ -1,0 +1,92 @@
+/* tabbing menu==================================================*/
+.simpletab-toolbar-container {
+	float: left;
+	width: 100%;
+	
+}
+
+ul.simpletab-toolbar {
+	margin-top:60px;
+
+	padding: 0;
+	list-style: none;
+	background-color:transparent;
+	float: left;
+	clear: left;
+}
+
+ul.simpletab-toolbar li {
+	float: left;
+}
+
+ul.simpletab-toolbar li a {
+	float: left;
+	text-decoration: none;
+	color:#178ac0;
+	padding:25px;
+	margin-right: 8px;
+	font: 900 14px "Arial", Helvetica, sans-serif;
+}
+
+ul.simpletab-toolbar li a em {
+	float: left;
+	padding-right: 15px;
+	display: block;
+	margin-top: -4px;
+	height: 24px;
+}
+
+ul.simpletab-toolbar li a:hover {
+ 	color:#d47251;
+	
+}
+
+
+
+ul.simpletab-toolbar li a.current {
+	color:#ffffff;
+}
+
+/* content==================================================*/
+
+#tab {
+	clear: left;
+	width: 100%;
+}
+
+.simpletab-container {
+	margin-top: 10px;
+	float: left;
+}
+
+.simpletab-container .simpletab-active {
+	display: block;
+}
+
+.simpletab-container .simpletab-hidden {
+	display: none;
+}
+
+
+.post {
+	padding: 0 10px;
+}
+
+h3 {
+	background: url(images/header.png) repeat-x top left;
+	height: 30px;
+	font: 900 20px "Times New Roman", Times, serif;
+	color: #fff;
+	margin: 0;
+	padding: 2px 0 0 10px;
+}
+
+img.alignlright, a img.alignright {
+	float: right;
+	margin: 0 0 5px 5px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #59b9e8;
+}
+
+

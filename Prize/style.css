@@ -1,0 +1,122 @@
+html,body{margin:0;padding:0}
+body{text-align:center;
+background-image: url(bg.jpg);
+background-position: center;
+background-repeat: repeat-y;
+background-color: #000;
+
+	margin:0;
+padding:0;
+}
+#header{margin:0 auto;
+width:800px;}
+
+#menu_bg{ 
+	background-image:url(../images/menu.png);
+	background-repeat: no-repeat;
+
+	
+	
+}
+#menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#menu
+{
+   
+ 	top: 0;
+	width:700px;
+	height: 88px;
+	margin-top: 0px;
+	margin-left: 0px;
+    list-style: none;
+   	position: relative;
+    font-family: Arial, Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+#menu li
+{
+	height: 58px;
+	float: left;
+	list-style:none;
+	border-left: 0px;
+	border-right: 0px;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+#menu a
+{
+	display:block;
+	color: #4a4a4a;
+	text-decoration: none;
+	padding-top:15px;
+	padding-right: 9px;
+	padding-left: 9px;
+	line-height: 33px;
+	font-weight: bolder;
+}
+
+#menu a:hover
+{
+	color: #d47251;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+#cse{margin:0 auto;
+width:800px;}
+
+ H2{font-family: Arial, Helvetica;
+    font-size: 21px;
+    font-weight: 100;
+    color: #d36b4a;
+    padding-left: 0px;}
+	
+	p{
+	font-family: Arial, Helvetica;
+	font-size: 15px;
+	color: #d0bfaa;
+	line-height: 25px;
+	text-align:justify;
+	}
+H1{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FF0;
+	text-align: left;
+}
+h3{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #09C;
+	text-align: left;
+}
+a.w{
+	font-size: 14px;
+	color: #F90;
+}
+#tx{
+	width: 150px;
+	float:left;
+}
+#mng{width: 180px;
+margin-left:50px;
+margin-top:0px;
+float:left;
+}
+#pn{width: 160px;
+float:left;
+margin-left:50px;}
+#prot{width: 160px;
+float:left;
+margin-left:50px;}

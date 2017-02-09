@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Welcome &raquo; RoboKANT </title>
+		<link rel="shortcut icon" href="images/icon.jpg" />
+		<meta name="description" content="the most famous IGNITIA brings you the RoboKANT, the exehibition of the extreme talent and skills of the bestest of best of minds " />
+		<meta name="Designers" content="Neeraj Singh and Shailendra Verma from CS 3rd year" />	
+		<link href="css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="css/slider.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+		<script type="text/javascript" src="js/jquery-easing-1.3.pack.js"></script>
+		<script type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
+		<script type="text/javascript" src="js/coda-slider.1.1.1.pack.js"></script>
+	
+		<script type="text/javascript">
+			var theInt = null;
+			var $crosslink, $navthumb;
+			var curclicked = 0;
+			
+			theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 5 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		$(function(){
+			
+			$("#main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+			.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		});
+		</script>
+
+		<style type="text/css">
+			.auto-style1 
+			{
+				font-style: normal;
+				font-family: "Abduction II";
+				font-size: larger;
+			}
+		.auto-style2 {
+			font-family: 1979;
+			font-size: small;
+			display: block;
+		}
+		.auto-style5 {
+			font-family: Abduction;
+			font-size: x-large;
+		}
+		.auto-style6 {
+			font-family: "Brush Script Std";
+			font-size: large;
+		}
+		.auto-style7 {
+	font-family: Verdana;
+	font-size: medium;
+}
+.auto-style9 {
+	font-family: Verdana;
+}
+.auto-style10 {
+	font-size: small;
+}
+.auto-style12 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: medium;
+}
+.auto-style13 {
+	font-size: large;
+}
+.auto-style14 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.auto-style16 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: large;
+}
+.auto-style20 {
+	font-size: medium;
+}
+		.auto-style21 {
+	font-family: Abduction;
+}
+		.auto-style22 {
+			font-family: Abduction;
+			font-size: large;
+		}
+		.auto-style23 {
+			font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+			font-size: small;
+		}
+		.auto-style24 {
+	font-family: 1979;
+	font-size: large;
+}
+.auto-style25 {
+	font-family: 1979;
+	font-size: small;
+}
+		.auto-style26 {
+			font-family: Verdana;
+			font-style: italic;
+		}
+		.auto-style27 {
+			font-family: Verdana;
+			font-style: italic;
+			font-size: large;
+		}
+		.auto-style28 {
+			font-family: Abduction;
+			font-size: medium;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div>
+					<h1 id="sitename">
+						<span class="auto-style1">THE ROBO-KANT</span>
+						
+					</h1>
+				</div>
+				<div id="topnav">
+					<ul>
+						<li class="auto-style21"><a href="index.html">HOME</a></li>
+						<li><span class="auto-style21"><a href="event.html">EVENTS</a></span></li>
+						<li class="auto-style21"><a href="http://www.psit.in/ignitia">ignitia main </a></li>
+						
+						
+						<!--<li><a href="#">PhotoGallery</a></li>
+						<li><a href="#">Rules</a></li>
+						<li><a href="#">Contacts</a></li>-->
+					</ul>
+				</div>
+				<br/>
+				<br/>
+				
+				<div class="clear"></div>
+				<div class="clear"></div>
+			</div>			
+			<div id="contents">
+				
+				<div id="topbar">
+					<br/>
+				<br/>
+				<br/>
+					
+					<div class="clear"></div>
+				</div>
+				<div id="homepage">
+					
+					<div class="clear">
+					
+					<div>
+						<p><span class="auto-style5">EVENT&nbsp; 1 :: ROBO-RACE</span>
+						</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>
+						<br /><br /><br />&nbsp;<span class="auto-style22" lang="EN">RULES AND 
+						REGULATIONS</span><span class="auto-style6" lang="EN"><u><br />
+						</u>
+						</span></p>
+						<p>&nbsp;</p>
+						<ul>
+							<li>
+							<p class="MsoNormal">
+							<span lang="EN">
+							<span class="auto-style12"># Each team should have 
+							at the most 5 members.</span></span><span class="auto-style9"><span class="auto-style7"><o:p></o:p></span></span></p>
+							</li>
+							<span class="auto-style7">
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							</span><span class="auto-style9">
+							<li>
+							<p class="MsoNormal"></span>
+							<span class="auto-style12"># </span> <span lang="EN">
+							<span class="auto-style7">
+							<span class="auto-style14">Participants 
+						from different educational institutions can form a team.<o:p></o:p></span></span></span></p>
+							</li>
+							<span class="auto-style10">
+							<span class="auto-style12">
+							<li>
+							<p class="MsoNormal"><span lang="EN">
+							<o:p>&nbsp;</o:p></span></p>
+							</li>
+							<li>
+							<p class="MsoNormal">#<span lang="EN"> All 
+						the participants should carry their valid identity card 
+						of their respective colleges.<o:p></o:p></span></p>
+							</li>
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							<li>
+							<p class="MsoNormal"><span lang="EN"><span># </span>In 
+						case of a tie, the final decision will be in the hands 
+						of coordinator.<o:p></o:p></span></p>
+							</li>
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							<li>
+							<p class="MsoNormal"><span lang="EN"><span>#&nbsp;</span>The 
+						final rules will be declared on the spot by the 
+						coordinator.<o:p></o:p></span></p>
+							</li>
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							<li>
+							<p class="MsoNormal"><span lang="EN"><span>#&nbsp;</span>The 
+						wireless bot is advised to have two remote control 
+						circuits (or a dual frequency<span> </span>remote 
+						control circuit) which can be switched to either 
+						frequency before the start of the game. This is done to 
+						avoid frequency interference between the two competing 
+						bots during the race.<o:p></o:p></span></p>
+							</li>
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							<li>
+							<p class="MsoNormal"><span lang="EN"># The organizers 
+						reserve the rights to change any or all of the above 
+						rules as they deem fit.</span></p>
+							</li>
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							<li>
+							<p class="MsoNormal"><span lang="EN"># The decision of the 
+						Event Organizers will be final and binding.<o:p></o:p></span></p>
+							</li>
+							</span>
+							</span>
+							<span class="auto-style7">
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							</span>
+							<li>
+							<p class="MsoNormal"><span lang="EN">
+							<span class="auto-style12"># Judges have the 
+						right to disqualify any machine whose working mechanism 
+						or game strategy is considered hazardous in any way.</span><o:p></o:p></span></p>
+							</li>
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p>
+							</p>
+							</li>
+							<li>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							</li>
+							<li></li>
+							<li></li>
+							<li>
+							</br>
+							</br>
+							<p class="MsoNormal">
+							<span class="auto-style22" lang="EN">BOT 
+							SPECIFICATIONS</span></p>
+							</br>
+							</br>
+							<p class="MsoNormal"><span lang="EN"><o:p></o:p>
+							</span></p>
+							</li>
+							<li>
+							<p class="MsoNormal"><span class="auto-style14"><span lang="EN">
+							<span class="auto-style20"># Bounding Box Size for 
+							Machine should be: 25 cm length X 25 cm width, no 
+							height limit.<o:p></o:p></span></span></p>
+							<span class="auto-style20">
+							<p class="MsoNormal"><span lang="EN">&nbsp;&nbsp; 
+							(Bounding Box: A box which can cover machine 
+							completely from all dimension)<o:p>.</o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># The Bot may 
+							be Wired or wireless with weight not exceeding 4kgs 
+							.<o:p></o:p></span></p>
+							<p class="MsoNormal"><span lang="EN"><o:p>&nbsp;</o:p></span></p>
+							<p class="MsoNormal"><span lang="EN"># The bot will 
+							be disqualified if any part fails or falls off in 
+							the arena and is unable to continue.<o:p></o:p></span></p>
+							<p class="MsoNormal"><span lang="EN"><o:p>&nbsp;</o:p></span></p>
+							<p class="MsoNormal"><span lang="EN"># The machine 
+							can be powered electrically only. Use of an IC 
+							engine in any form is not allowed. On board 
+							batteries must be sealed immobilized or electrolyte 
+							types.( such as gel cells, lithium, NiCad, NiMH, or 
+							dry cells).<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># Any type of 
+							batteries can be used provided it does not exceed 12 
+							V.<o:p></o:p></span></p>
+							<p class="MsoNormal"><span lang="EN"><o:p>&nbsp;</o:p></span></p>
+							<p class="MsoNormal"><span lang="EN"># Power supply 
+							can be derived from batteries or through external 
+							source (220v/50 Hz).<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># Voltage at 
+							any point must be lower or equal to 12V DC during 
+							the game.<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># The 
+							organizers will provide a standard 220V/50 Hz AC 
+							power supply. Any eliminator, adaptor,etc required 
+							will have to be arranged by participants themselves.<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># Sufficient 
+							wire should be brought if wired.<o:p></o:p></span></p>
+							</span><span class="auto-style10">
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							</span>
+							<p class="MsoNormal"></span><span lang="EN">
+							<span class="auto-style14">
+							<span class="auto-style20"># Jumping and hopping is 
+							not allowed.</span></span><o:p></o:p></span></p>
+							<u><span class="auto-style6" lang="EN"><br /><br />
+							</span></u>
+							<span class="auto-style13" lang="EN">
+							<p class="MsoNormal">
+							<span lang="EN" class="auto-style21">PROBLEM 
+							STATEMENT</span></span><u><span class="auto-style6" lang="EN"></p>
+							</li>
+							<li>
+							</li>
+							<br /></span></u>
+							<span class="auto-style12" lang="EN">
+							<p class="MsoNormal"><span lang="EN"># Design and 
+							build a wired or wireless racing bot that can 
+							complete the given race arena in least possible 
+							time. The team should be meticulous enough to manage 
+							the control and speed of the bot and to overcome 
+							different terrains. The robot that completes the 
+							track in the minimum time is the winner.<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># The endurance 
+							of the bots will be tested.<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># There are 
+							different terrains and checkpoints to which the bot 
+							has to pass through.<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># Be ready for 
+							surprise terrains which will be revealed on the 
+							spot.<o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							<p class="MsoNormal"><span lang="EN"># arena will 
+							consist of hurdles, sand, mud, Slippery slope, 
+							rolling balls, etc.<o:p></o:p></span></p>
+							</span><u><span class="auto-style6" lang="EN">
+							<span class="auto-style6" lang="EN"><br />
+							</span></span></u>
+							<span class="auto-style22" lang="EN">
+							<p class="MsoNormal">
+							</span><span lang="EN">
+							<span class="auto-style22" lang="EN">ARENA</span><span class="auto-style6" lang="EN"><u><b><o:p>:</o:p></b></u></span></span><span class="auto-style6" lang="EN"><u></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							</u>
+							</span>
+							<span class="auto-style13" lang="EN">
+							<a href="images/arena1.JPG"><p class="auto-style26">
+							arena1</p></a>
+							<a href="images/arena2.JPG"><p class="auto-style26">
+							arena2</p></a>
+							
+
+
+							<p class="MsoNormal">
+							<o:p></o:p></p><br/><br/><br/><br/>
+							<li>
+							</span><span lang="EN">
+							<p class="MsoNormal">
+							<span class="auto-style5" lang="EN">EVENT 2 :: 
+							ROBO_RUMBLE</span></span><span class="auto-style13" lang="EN"><span lang="EN"><o:p></o:p></span></p>
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							</span><span class="auto-style6" lang="EN"><u>
+							<span class="auto-style6" lang="EN"><br /><br />
+							<br /></span></u>
+							</span>
+							<span class="auto-style13" lang="EN">
+							<p class="MsoNormal">
+							<span lang="EN" class="auto-style21">RULES AND 
+							REGULATIONS</span></p>
+							</span><br/><br/>
+							<span class="auto-style6" lang="EN">
+							<p class="MsoNormal">
+							<o:p></o:p></p>
+							</li>
+							</span>
+						</ul>
+						
+						<p class="MsoNormal"><span lang="EN"><span>&nbsp; </span>
+						<span class="auto-style16"># </span>
+						<span class="auto-style12">Two robots will fight at a 
+						time.<o:p></o:p></span></span></p>
+						
+
+						<span class="auto-style14">
+						<p class="MsoNormal"></span><span lang="EN">
+						<span class="auto-style14"><span class="auto-style20">&nbsp;#
+						</span></span><span class="auto-style16">
+						<span class="auto-style12">Preliminary stages will be of 
+						3 minute each(elimination round)<o:p>.</o:p></span></span></span><span class="auto-style16"><span class="auto-style12"></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"><span>&nbsp;# </span>
+						Final stage will be of 5 minutes.<o:p></o:p></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"><span>&nbsp;# </span>The 
+						robots once entered the dead zone may result in 
+						elimination or the loss of points.<o:p></o:p></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"><span>&nbsp;# </span>If 
+						the robot will not be able to come out of dead zone with 
+						in 40 sec. the robot will be declared as dead<o:p>.</o:p></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"><span>&nbsp;# </span>The 
+						robot looses the match if there is no mobility of the 
+						robot and the driver of the robot surrenders.<o:p></o:p></span></p>
+						</span><span class="auto-style16">
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span></span>
+						<p class="MsoNormal"><span lang="EN">
+						<span class="auto-style14"><span class="auto-style20">&nbsp;#&nbsp;</span></span><span class="auto-style12">The 
+						robot will be provided with only 10 sec. to show the 
+						translational movement,<span>&nbsp;</span>otherwise it will 
+						be declared as dead. </span> <o:p></o:p>
+						</span></p>
+						<p class="MsoNormal">
+						<o:p></o:p>
+						</p>
+						<p class="MsoNormal">
+						<o:p></o:p>
+						</p>
+						<p class="MsoNormal">
+						<o:p></o:p>
+						</p>
+						<p class="MsoNormal">
+						<o:p></o:p>
+						</p><br/><br/>
+						<p class="MsoNormal">
+						<span class="auto-style22" lang="EN">SCORING</span></p><br/><br/>
+						<p class="MsoNormal">
+						<o:p></o:p>
+						</p>
+						<p class="auto-style12"><span lang="EN"># Attack- +10 
+						points.<o:p></o:p></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<span class="auto-style12">
+						<p class="MsoNormal"><span lang="EN"># Destroying a 
+						weapon- +30 points<o:p></o:p></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"># The final winner 
+						however would be the robot which pushes the opponent&#8217;s 
+						robot into the death zone. The points would be 
+						considered only in case none of the robots goes into the 
+						death zone within the specified time limit.<o:p></o:p></span></p>
+						</span><span class="auto-style16">
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span>
+						<p class="MsoNormal"><span class="auto-style20"># </span>
+						<span lang="EN"><span class="auto-style12">There are no 
+						points for the design of the robot.</span><o:p></o:p></span></p><br/><br/>
+						<p class="MsoNormal">
+						<span class="auto-style22" lang="EN">OTHER GUIDELINES</span></p><br/><br/>
+						<p class="MsoNormal"><span lang="EN">
+						<span class="auto-style12">&nbsp;# </span>
+						<span class="auto-style16">Fire, water, chemicals and 
+						explosives are not to be used as weapons.<o:p></o:p></span></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<span class="auto-style14">
+						<p class="MsoNormal"></span>&nbsp;<span lang="EN"><span class="auto-style14"><span class="auto-style20">#
+						</span></span><span class="auto-style16">
+						<span class="auto-style14">Any weapon used should be 
+						within the limits specified for the robot.<o:p></o:p></span></span></span></p>
+						<p class="MsoNormal"><span class="auto-style12"></p>
+						<span class="auto-style14">
+						<p class="MsoNormal"></span><span lang="EN">
+						<span class="auto-style14"><span>&nbsp;# </span></span></span></span>
+						<span lang="EN">
+						<span class="auto-style14"><span class="auto-style16">Control for 
+						the robots can be wired or wireless. In case of a 
+						wireless remote, the team should make sure that the wire 
+						is slack and does not fall on the arena at any point of 
+						time.<o:p></o:p></span></span></span><span class="auto-style14"><span class="auto-style12"><span class="auto-style16"></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span>
+						<p class="MsoNormal"><span lang="EN">
+						<span class="auto-style14"><span>&nbsp;# </span></span>
+						<span class="auto-style16"><span class="auto-style14">
+						Gearbox and/or motor assembly of a toy car, or a base of 
+						a toy car with its gearbox and /or motor cannot be used 
+						as a machine part.<o:p></o:p></span></span></span><span class="auto-style14"><span class="auto-style16"></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"><span>&nbsp;# </span>
+						</span></span>
+						</span></span>
+						<span class="auto-style14"><span class="auto-style14"><span lang="EN"><span class="auto-style16">Lego kits/parts are not allowed.<o:p></o:p></span></span></span><span class="auto-style12"><span class="auto-style14"></p>
+						</span><span class="auto-style16">
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span></span>
+						<span class="auto-style14"><span class="auto-style14">
+						<p class="MsoNormal"></span>
+						</span><span lang="EN"><span class="auto-style14">
+						<span class="auto-style13">#&nbsp;</span></span><span class="auto-style16"><span class="auto-style14">The 
+						decision of the judges will be final and binding.<o:p></o:p></span></span></span><span class="auto-style16"><span class="auto-style12"><span class="auto-style14"><span class="auto-style23"></p>
+						</span>
+						</span><span class="auto-style16"><span class="auto-style12">
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span>
+						<span class="auto-style14">
+						<p class="MsoNormal"></span>
+						<span lang="EN"><span class="auto-style14"><span># </span>The 
+						entries are restricted to students currently pursuing 
+						education in recognized institute.<o:p></o:p></span></span><span class="auto-style12"><span class="auto-style14"></p>
+						</span>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span>
+						</span><span class="auto-style14">
+						<p class="MsoNormal"># <span lang="EN">Students from 
+						different colleges can form a single team.<o:p></o:p></span></p>
+						</span><span class="auto-style16"><span class="auto-style12">
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"><span>#&nbsp;</span>The 
+						rules are subject to change at any time before the date 
+						of event. The students are requested to check for 
+						updates.<o:p></o:p></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"># Flying of the 
+						robot is not allowed.<o:p></o:p></span></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="MsoNormal"><span lang="EN"># Hazardous and 
+						dangerous materials are forbidden from use anywhere on 
+						the robot where they may contact humans.<o:p></o:p></span></p>
+						</span>
+						</span></span>
+						</span>
+						</span></span><span class="auto-style12"><span class="auto-style16">
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span></span>
+						<p class="MsoNormal"><span lang="EN">
+						<span class="auto-style12"># All the participating teams 
+						will get participation certificates.</span><o:p></o:p></span></p>
+						<br class="auto-style20" /><br/>
+						<p class="MsoNormal">
+						<span class="auto-style22" lang="EN">ROBOT SIZE AND 
+						WEIGHT</span></p><br/><br/>
+						<p class="auto-style20"><span class="auto-style14">#
+						<span lang="EN">The maximum size of the robot is 25 cm X 
+						25 cm .</span></span><span class="auto-style16"><span class="auto-style14"><o:p></o:p></p>
+						</span>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						</span><span class="auto-style14">
+						<p class="MsoNormal"></span><span lang="EN">
+						<span class="auto-style14"><span class="auto-style20">#
+						</span></span><span class="auto-style16">
+						<span class="auto-style12">The maximum weight can be 8 
+						kg.<o:p></o:p></span></span></span><span class="auto-style16"><span class="auto-style12"></p>
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						# The Robot should run on a 12V D.C. however,220V AC will be provided to the participants.
+
+						</span></span>
+						<br /><br/>
+						<p class="MsoNormal">
+						<span class="auto-style22" lang="EN">ARENA SPECIFICATION</span></p><br/>
+                        <span class="auto-style12">The Bot which will reach to the lifeline point will be given additional Bot for the WAR <o:p></o:p></span><br/><BR />
+						<p class="MsoNormal">
+						<o:p></o:p></p>
+						<p class="auto-style27">
+							<a href="images/wars.JPG">arena3</a></p>
+						<p class="auto-style27">
+							<br/>
+							
+						<p class="auto-style28">
+							NOTE
+						</p><br/>
+						<p class="auto-style10">
+							# Be ready for surprise trains.<br/>
+							# the shape and dimension of arena may vary. 						</p>
+					</div>
+					<div class="clear">
+						
+					</div>
+						
+				</div>
+			</div>	
+				<div class="clear"></div>
+				<div id="bottom">
+					<div class="columns">
+						
+						<h3 class="auto-style21">coordinator</h3><br/>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="auto-style2">Varun Abbott</span></p>
+						<p><img src="images/telephone.png" alt="Call" width="16" height="16" /> 
+						Call : +91 9956426256</p>
+						<p><img src="images/mail_generic.png" alt="email" width="16" height="16" /> Email : 
+						abbott0123@gmail.com</p>
+						  
+					</div>
+					<div class="columns">
+						
+						<h3 class="auto-style7">&nbsp;<span class="auto-style21">coordinators</span></h3>
+						<br/>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="auto-style2">Vijit mishra</span></p>
+						<p>
+						<img src="images/telephone.png" alt="Call" width="16" height="16" /> 
+						Call : +91 9956170022</p>
+						<p>
+						<img src="images/mail_generic.png" alt="email" width="16" height="16" /> 
+						Email : vijitmishra786@gmail.com</p>
+						  
+					</div>
+					<div class="columns">
+						
+						<h3 class="auto-style7">&nbsp;</h3><br/>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="auto-style2">Anurag soni</span></p>
+						<p><img src="images/telephone.png" alt="Call" width="16" height="16" /> 
+						Call : +91 9198449311</p>
+						<p><img src="images/mail_generic.png" alt="email" width="16" height="16" /> 
+						Email : sonianurag022@gmail.com</p>
+						  
+					</div>
+	
+					<div class="columns">
+						
+						<h3 class="auto-style7">&nbsp;</h3><br/>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="auto-style2">nitin bajpai</span></p>
+						<p><img src="images/telephone.png" alt="Call" width="16" height="16" /> 
+						Call : +91 9795362462</p>
+						<p><img src="images/mail_generic.png" alt="email" width="16" height="16" /> 
+						Email : nbajpai34@gmail.com</p>
+						  
+					</div>
+
+	
+					<div class="clear"></div>
+				</div>
+				<div id="midbottom"></div>
+			
+				<div id="footer">
+					<div class="footercontent">
+						<p><span class="auto-style24">@IGNITIA2011</span> 
+						<br/>
+						<span class="auto-style25">all rights reserved</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+	</body>
+</html>

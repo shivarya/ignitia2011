@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Register Here!</title>
+     <link rel="Shortcut Icon" href="img/favicon.png">
+  
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/jquery-bp.js" ></script>
+	<script type="text/javascript" src="js/navigation.js" ></script>
+</head>
+<body>
+	<div id="header">
+     <div id="bg">
+    <div id="menu_bg">
+	 <ul id="menu">
+                <li id="menuMain">
+						<a href="http://www.psit.in/ignitia" title="Main" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">MAIN</span></a>
+	    </li>
+				<li id="menuevent">
+						<a href="http://www.psit.in/ignitia/events.html" title="Events" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">EVENTS</span></a>
+	    </li>
+                
+                    <li id="menuContact">
+						<a href="http://psit.in/ignitia/protocol" title="Protocol" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">PROTOCOL</span></a>
+					</li> 
+                    <li id="menuContact">
+						<a href="http://www.psit.in/ignitia/autumn" title="Autumn Rock" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">AUTUMN</span></a>
+					</li> 
+                    <li id="menuContact">
+						<a href="http://www.psit.in/ignitia/robokant" title="Robokant" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">ROBOKANT</span></a>
+					</li>
+                    <li id="menuContact">
+						<a href="http://www.psit.in/ignitia/cause" title="Cause" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">CAUSE</span></a>
+					</li>
+                    <li id="menuContact">
+						<a href="http://www.psit.in/ignitia#register" title="Sponsors" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">SPONSORS</span></a>
+					</li>
+                    <li id="menuWork">
+						<a href="http://www.psit.in/ignitia/register" title="Register Here!" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">REGISTER</span></a>
+	    </li>
+             		<li id="menuContact">
+						<a href="http://www.psit.in/ignitia#contact" title="Contact" onmousedown="this.onfocus=this.blur" onmouseup="this.onfocus=window.clientInformation?null:window.undefined"><span class="linkText">CONTACT</span></a>
+					</li>  
+                     		
+		</ul>
+</div></div><div id="logo"><img src="img/REG.png" /></div></div>
+	<div id="navigation" class="container">
+		<div id="home" onclick="location.href='index.html';" style="cursor:pointer;" class="pri-nav active"><div><a href="index.html">Events</a></div></div>
+		<div id="about" onclick="location.href='atmn.html';" style="cursor:pointer;" class="pri-nav"><div><a href="atmn.html">Autumn-Rock</a></div></div>
+		<div id="services" onclick="location.href='protocol.html';" style="cursor:pointer;" class="pri-nav"><div><a href="protocol.html">protocol</a></div></div>
+				
+	</div>
+	<div class="container">
+		<div class="content">
+			<div id="content-title">
+           </div><br /><br /><br /><br />
+           <div id="frm">
+<form name="reg_ignitia" action="reg_done.php" method="get" onSubmit="return validate();">
+<table>
+<tr><td><label>Name</label></td><td style="height: 25px;"><input type="text"  class="txt_input_insitute" name="name" value=""></td>
+<tr><td><label>e-mail</label></td><td><input type="text"  class="txt_input" name="email" value=""></td>
+<tr><td><label>Mobile no.</label></td><td><input  class="txt_input_phno" type="text" name="mobile" value=""></td>
+<tr><td><label>College</label></td><td><input  class="txt_input_name" type="text" name="college" value=""></td>
+</tr></tr></tr></tr></table>
+
+
+<table class="tb">
+<p class="hd">Events</p>
+<tr class="rw">
+<td align="center">Techxi</td><td align="center" width="100px">Manageria</td><td align="center">Razzmattazz</td><td align="center">Pharmakon</td><td align="center">Free Ishtyle</td>
+<tr>
+<tr><td>
+<table class="pd"><tr><td>robokant</td><td><input type="checkbox" name="event[]" value="robokant"></td>
+<tr><td>junkyard</td><td><input type="checkbox" name="event[]" value="junkyard"></td>
+<tr><td>Bob the Builder</td><td><input type="checkbox" name="event[]" value="bob the builder"></td></tr>
+<tr><td>Infraville</td><td><input type="checkbox" name="event[]" value="infraville" /></td></tr>
+<tr><td>Softogenesis</td><td><input type="checkbox" name="event[]" value="softogenesis"></td>
+<tr><td>Web-d</td><td><input type="checkbox" name="event[]" value="Web-d"></td>
+<tr><td>Auto Caddiction</td><td><input type="checkbox" name="event[]" value="Auto Caddiction"></td>
+<tr><td>let's c</td><td><input type="checkbox" name="event[]" value="Lets c"></td>
+<tr><td>Circuiteshwar</td><td><input type="checkbox" name="event[]" value="Circuiteshwar"></td>
+</table></td><td><table class="pd"><td>B-plan</td><td><input type="checkbox" name="event[]" value="B-plan"></td>
+<tr><td>Ad-mad</td><td><input type="checkbox" name="event[]" value="Ad-mad"></td>
+<tr><td>A minute battle</td><td><input type="checkbox" name="event[]" value="A minute battle"></td>
+<tr><td>Word war 3</td><td><input type="checkbox" name="event[]" value="Word war 3"></td>
+<tr><td>The fiction insect</td><td><input type="checkbox" name="event[]" value="The fiction insect"></td>
+</table></td>
+<td><table class="pd"><td>Poster making</td><td><input type="checkbox" name="event[]" value="Poster making"></td>
+<tr><td>T-shirt making</td><td><input type="checkbox" name="event[]" value="T-shirt making"></td>
+<tr><td>Calligraphy</td><td><input type="checkbox" name="event[]" value="Calligraphy"></td>
+<tr><td>Face Painting</td><td><input type="checkbox" name="event[]" value="Face painting"></td></tr>
+<tr><td>Pixture</td><td><input type="checkbox" name="event[]" value="Pixture"></td></tr>
+<tr><td>Silver Screen</td><td><input type="checkbox" name="event[]" value="Silver Screen"></td></tr>
+</table></td>
+<td><table class="pd"><td>General Awareness</td><td><input type="checkbox" name="event[]" value="General Awareness"></td>
+<tr><td>Poster presentation</td><td><input type="checkbox" name="event[]" value="Poster presentation"></td>
+<tr><td>Model making</td><td><input type="checkbox" name="event[]" value="Model making"></td>
+</table></td>
+<td><table class="pd"><td>Rabbit typing</td><td><input type="checkbox" name="event[]" value="Rabbit typing"></td>
+<tr><td>Bender-menders</td><td><input type="checkbox" name="event[]" value="Bender-menders"></td>
+<tr><td>Paparazzi Grooves</td><td><input type="checkbox" name="event[]" value="Paparazzi grooves"></td>
+<tr><td>Deaf drummers</td><td><input type="checkbox" name="event[]" value="Deaf drummers"></td>
+</table></td>
+</table><br />
+<input class="btn_input" src="img/submit.gif" name="submit" value="register" type="image">
+</form>
+</div>
+			<!-- the rest of the content-->
+		</div>
+	</div>
+</body>
+
+
